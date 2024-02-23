@@ -7,7 +7,7 @@
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <SvgIcon name="单行文本" size="2em" color="#000" />
+  <SvgIcon name="首页" size="2em" color="#000" />
 </template>
 
 <script setup lang="ts">

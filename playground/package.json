@@ -1,7 +1,12 @@
 {
   "name": "playground",
-  "private": true,
   "version": "0.0.0",
+  "description": "A playground for vite-plugin-svg",
+  "private": true,
+  "author": {
+    "name": "Tang",
+    "url": "https://github.com/tangllty/vite-plugin-svg/playground"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
