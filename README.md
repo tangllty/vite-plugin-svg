@@ -5,11 +5,11 @@ A lightweight Vite 5 plugin for SVG sprites.
 ## install
 
 ```bash
-npm install @tang/vite-plugin-svg -D
+npm install @tangllty/vite-plugin-svg -D
 # or
-yarn add @tang/vite-plugin-svg -D
+yarn add @tangllty/vite-plugin-svg -D
 # or
-pnpm install @tang/vite-plugin-svg -D
+pnpm install @tangllty/vite-plugin-svg -D
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ pnpm install @tang/vite-plugin-svg -D
 - Configuration plugin in vite.config.ts
 
 ```ts
-import { createSvgPlugin } from '@tang/vite-plugin-svg'
+import { createSvgPlugin } from '@tangllty/vite-plugin-svg'
 
 export default defineConfig({
   plugins: [

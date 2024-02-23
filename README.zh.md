@@ -5,11 +5,11 @@ SVG sprites 轻量级 Vite 5 插件。
 ## 安装
 
 ```bash
-npm install @tang/vite-plugin-svg -D
+npm install @tangllty/vite-plugin-svg -D
 # or
-yarn add @tang/vite-plugin-svg -D
+yarn add @tangllty/vite-plugin-svg -D
 # or
-pnpm install @tang/vite-plugin-svg -D
+pnpm install @tangllty/vite-plugin-svg -D
 ```
 
 ## 使用
@@ -17,7 +17,7 @@ pnpm install @tang/vite-plugin-svg -D
 - 在 vite.config.ts 中配置插件
 
 ```ts
-import { createSvgPlugin } from '@tang/vite-plugin-svg'
+import { createSvgPlugin } from '@tangllty/vite-plugin-svg'
 
 export default defineConfig({
   plugins: [
