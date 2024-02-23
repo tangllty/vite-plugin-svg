@@ -29,7 +29,7 @@
   "scripts": {
     "play": "vite playground",
     "build": "unbuild",
-    "test": "vitest"
+    "publish": "pnpm publish --access public"
   },
   "keywords": [
     "vite",
