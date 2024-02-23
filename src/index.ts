@@ -14,7 +14,7 @@ const defaultOptions: SvgOptions = {
   prefix: 'icon'
 }
 
-const getSvgSymbols = async (svgOptions: SvgOptions) => {
+const getSvgSymbols = async (svgOptions: SvgOptions): Promise<string[]> => {
   const symbols: string[] = []
   const files = await glob(svgOptions.pattern || defaultPattern)
   await Promise.all(files.map(async (file: string) => {
@@ -36,7 +36,7 @@ export const svgIconsPlugin = (options: SvgOptions = defaultOptions): Plugin => 
 
   return {
     name: 'vite-plugin-svg',
-    transformIndexHtml: async (html) => {
+    transformIndexHtml: async (html): Promise<string> => {
       const symbols = await getSvgSymbols(svgOptions)
       const svgHtml = `<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">${symbols.join('')}</svg>`
       return html.replace('</body>', `${svgHtml}</body>`)
