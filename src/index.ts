@@ -16,7 +16,7 @@ const defaultOptions: SvgOptions = {
 
 const getSvgSymbols = async (svgOptions: SvgOptions): Promise<string[]> => {
   const symbols: string[] = []
-  const files = await glob(svgOptions.pattern || defaultPattern)
+  const files = await glob(`${process.cwd()}/${svgOptions.pattern || defaultPattern}`)
   await Promise.all(files.map(async (file: string) => {
     const content = await readFile(file, 'utf8')
     const svgContent = await optimize(content, { path: file })
