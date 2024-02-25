@@ -34,4 +34,4 @@ jobs:
     - name: Publish
       run: pnpm publish --access public --no-git-checks
       env:
-        NODE_AUTH_TOKEN: ${{secrets.pnpm_token}}
+        NODE_AUTH_TOKEN: ${{secrets.PNPM_TOKEN}}
