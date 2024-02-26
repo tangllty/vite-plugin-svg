@@ -7,7 +7,11 @@
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <SvgIcon name="首页" size="2em" color="#000" />
+  <div class="icon-container">
+    <SvgIcon name="首页" size="2em" color="#000" />
+    <SvgIcon name="代码生成" size="2em" color="#000" />
+    <SvgIcon name="分析列表" size="2em" color="#000" />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -26,5 +30,12 @@ import SvgIcon from './components/SvgIcon/index.vue'
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2em;
 }
 </style>
