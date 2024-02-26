@@ -1,6 +1,6 @@
 {
   "name": "@tangllty/vite-plugin-svg",
-  "version": "1.0.0-rc.8",
+  "version": "1.0.0-rc.9",
   "description": "A lightweight vite plugin for SVG sprite.",
   "author": {
     "name": "Tang",
