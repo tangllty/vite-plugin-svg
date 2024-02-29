@@ -17,7 +17,7 @@ pnpm install @tangllty/vite-plugin-svg -D
 - 在 vite.config.ts 中配置插件
 
 ```ts
-import { createSvgPlugin } from '@tangllty/vite-plugin-svg'
+import { svgIconsPlugin } from '@tangllty/vite-plugin-svg'
 
 export default defineConfig({
   plugins: [
