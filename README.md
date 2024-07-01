@@ -21,7 +21,10 @@ import { svgIconsPlugin } from '@tangllty/vite-plugin-svg'
 
 export default defineConfig({
   plugins: [
-    svgIconsPlugin()
+    svgIconsPlugin({
+      pattern: 'src/assets/icons/**/*.svg',
+      prefix: 'icon'
+    })
   ]
 })
 ```
