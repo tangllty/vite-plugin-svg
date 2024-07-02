@@ -1,6 +1,6 @@
 {
   "name": "playground",
-  "version": "v1.0.4-rc.1",
+  "version": "v1.0.4-rc.2",
   "description": "A playground for vite-plugin-svg",
   "private": true,
   "author": {
