@@ -23,7 +23,7 @@ const getSvgSymbols = async (svgOptions: SvgOptions): Promise<string[]> => {
     const name = path.basename(file, '.svg')
     const svgElement = parse(svgContent.data).querySelector('svg') as HTMLElement
     const symbolId = svgOptions.prefix ? `${svgOptions.prefix}-${name}` : `${name}`
-    const viewBox = svgElement.attributes.viewBox
+    const viewBox = svgElement.attributes.viewBox || '0 0 1024 1024'
     const view = svgElement.childNodes.map((node) => node).toString()
     const symbol = `<symbol id="${symbolId}" viewBox="${viewBox}">${view}</symbol>`
     symbols.push(symbol)
